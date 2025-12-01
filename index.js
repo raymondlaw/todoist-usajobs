@@ -102,7 +102,7 @@ function receive_access_token(body, user_input, res) {
 
 function get_jobs_information(user_input, access_token, res) {
     const {description, location} = user_input;
-    const jobs_endpoint = `https://data.usajobs.gov/api/search?Keyword=${description}&LocationName=${location}`;
+    const jobs_endpoint = `https://data.usajobs.gov/api/Search?Keyword=${description}&LocationName=${location}`;
 	const options = {
 		method:"GET",
 		headers:{
